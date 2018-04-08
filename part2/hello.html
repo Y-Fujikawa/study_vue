@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>速習Vue.js</title>
+</head>
+<body>
+    <!-- ページ全体 -->
+    <div id="app">
+        <!-- 2. 準備済みの値を出力 -->
+        <!-- データバインディングされたものは {{ ... }} で参照する -->
+        <p>{{ message }}</p>
+
+        <!-- ディレクティブによるデータアクセス -->
+        <!-- ディレクティブとは v-... ではじまる特別な属性 -->
+        <p v-text="message"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="./hello.js"></script>
+</body>
+</html>

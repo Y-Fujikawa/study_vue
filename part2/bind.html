@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>速習Vue.js</title>
+</head>
+<body>
+    <!-- ページ全体 -->
+    <div id="app">
+        <!-- 属性に対して式の値を埋め込むのに {{ ... }} は利用できない -->
+        <!-- 属性値の操作は v-bind ディレクティブを使う -->
+        NG<br>
+        <a href="{{ url }}">サポートサイト</a><br>
+        OK<br>
+        <a v-bind:href="url">サポートサイト</a>
+        <br>
+        <!-- v-bindは良く利用されることから省略構文も用意されている -->
+        OK（省略形を使っている）<br>
+        <a :href="url">サポートサイト</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="./bind.js"></script>
+</body>
+</html>
