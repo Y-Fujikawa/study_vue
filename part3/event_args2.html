@@ -7,7 +7,11 @@
 </head>
 <body>
     <!-- ページ全体 -->
+    <div id="app">
+        <!-- 明示的に $event を渡す -->
+        <button v-on:click="onclick('こんにちは', $event)">クリック</button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="./template.js"></script>
+    <script src="./event_args2.js"></script>
 </body>
 </html>

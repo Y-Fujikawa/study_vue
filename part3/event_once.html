@@ -7,7 +7,12 @@
 </head>
 <body>
     <!-- ページ全体 -->
+    <div id="app">
+        <!-- イベント修飾子を使って、イベントを制御する -->
+        <button v-on:click.once="onclick">現在の時刻</button>
+        <p>{{ message }}</p>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="./template.js"></script>
+    <script src="./event_once.js"></script>
 </body>
 </html>
