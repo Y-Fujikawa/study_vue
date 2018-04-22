@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>速習Vue.js</title>
+</head>
+<body>
+    <!-- ページ全体 -->
+    <div id="app">
+        <form>
+            <select v-model="language">
+                <option value="">話せる言語は？</option>
+                <option>日本語</option>
+                <option>英語</option>
+                <option>ドイツ語</option>
+            </select>
+        </form>
+        <p>回答：{{ language }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="./model_select.js"></script>
+</body>
+</html>

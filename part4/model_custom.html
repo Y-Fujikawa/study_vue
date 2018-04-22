@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>速習Vue.js</title>
+</head>
+<body>
+    <!-- ページ全体 -->
+    <div id="app">
+        <!-- 入力された値をプロパティにバインドする際になんらかの処理を挟みたい場合 -->
+        <!-- v-bind:value / v-on:input の組み合わせを利用する -->
+        <form>
+            <label for="name">メールアドレス：</label>
+            <textarea v-bind:value="emails.join(';')" v-on:input="emails=$event.target.value.split(';')"></textarea>
+        </form>
+        <ul>
+            <li v-for="email in emails">
+                {{ email }}
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="./model_custom.js"></script>
+</body>
+</html>
